@@ -1,6 +1,6 @@
 {
   "name": "omarayman/dictionary",
-  "description": "It is a package that eases the interaction with some of the known dictionary apis like google for example",
+  "description": "It is a package that facilitates the interaction with some of the known dictionary apis like google for example",
   "license": "MIT",
   "keywords": [
     "Dictionary",
