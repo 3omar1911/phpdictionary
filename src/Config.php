@@ -1,9 +1,9 @@
 <?php
 
-namespace Nextpack\Nextpack;
+namespace Omarayman\Dictionary;
 
 use Illuminate\Config\Repository;
-use Nextpack\Nextpack\Exceptions\ConfigFileNotFoundException;
+use Omarayman\Dictionary\Exceptions\ConfigFileNotFoundException;
 
 /**
  * Class Config

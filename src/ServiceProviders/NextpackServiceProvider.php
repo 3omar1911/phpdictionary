@@ -1,11 +1,11 @@
 <?php
 
-namespace Nextpack\Nextpack\ServiceProviders;
+namespace Omarayman\Dictionary\ServiceProviders;
 
 use Illuminate\Support\ServiceProvider;
-use Nextpack\Nextpack\Contracts\SampleInterface;
-use Nextpack\Nextpack\Facades\SampleFacadeAccessor;
-use Nextpack\Nextpack\Sample;
+use Omarayman\Dictionary\Contracts\SampleInterface;
+use Omarayman\Dictionary\Facades\SampleFacadeAccessor;
+use Omarayman\Dictionary\Sample;
 
 /**
  * Class NextpackServiceProvider

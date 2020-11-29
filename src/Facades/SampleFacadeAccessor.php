@@ -1,6 +1,6 @@
 <?php
 
-namespace Nextpack\Nextpack\Facades;
+namespace Omarayman\Dictionary\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nextpack\Nextpack\Contracts;
+namespace Omarayman\Dictionary\Contracts;
 
 /**
  * Interface  SampleInterface

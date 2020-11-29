@@ -1,17 +1,15 @@
 {
-  "name": "nextpack/nextpack",
-  "description": "Nextpack is a PHP Packages Framework (Starter Project)",
+  "name": "omarayman/dictionary",
+  "description": "It is a package that eases the interaction with some of the known dictionary apis like google for example",
   "license": "MIT",
   "keywords": [
-    "NextPack",
-    "Starter"
+    "Dictionary",
+    "Google Dictionnary"
   ],
   "authors": [
     {
-      "name": "Mahmoud Zalt",
-      "email": "mahmoud@zalt.me",
-      "homepage": "http://www.zalt.me",
-      "role": "Coffee Maker :)"
+      "name": "Omar Ayman",
+      "email": "oa36345@gmail.com"
     }
   ],
   "require": {
@@ -25,13 +23,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Nextpack\\Nextpack\\": "src",
+      "Omarayman\\Dictionary\\": "src",
       "Nextpack\\Library\\": "src/library"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Nextpack\\Nextpack\\Tests\\": "tests"
+      "Omarayman\\Dictionary\\Tests\\": "tests"
     }
   },
   "scripts": {

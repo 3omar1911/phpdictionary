@@ -1,5 +1,5 @@
 <?php
-namespace Nextpack\Nextpack\Exceptions;
+namespace Omarayman\Dictionary\Exceptions;
 
 /**
  * Class ConfigFileNotFoundException

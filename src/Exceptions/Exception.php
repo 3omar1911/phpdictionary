@@ -1,6 +1,6 @@
 <?php
 
-namespace Nextpack\Nextpack\Exceptions;
+namespace Omarayman\Dictionary\Exceptions;
 
 use Exception as CoreException;
 

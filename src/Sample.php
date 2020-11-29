@@ -1,6 +1,6 @@
 <?php
 
-namespace Nextpack\Nextpack;
+namespace Omarayman\Dictionary;
 
 /**
  * Class Sample
@@ -11,14 +11,14 @@ class Sample
 {
 
     /**
-     * @var  \Nextpack\Nextpack\Config
+     * @var  \Omarayman\Dictionary\Config
      */
     private $config;
 
     /**
      * Sample constructor.
      *
-     * @param \Nextpack\Nextpack\Config $config
+     * @param \Omarayman\Dictionary\Config $config
      */
     public function __construct(Config $config)
     {

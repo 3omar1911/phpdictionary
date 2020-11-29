@@ -1,15 +1,15 @@
 <?php
 
-namespace Nextpack\Nextpack\Tests;
+namespace Omarayman\Dictionary\Tests;
 
-use Nextpack\Nextpack\Config;
-use Nextpack\Nextpack\Sample;
+use Omarayman\Dictionary\Config;
+use Omarayman\Dictionary\Sample;
 
 /**
  * Class SampleTest
  *
  * @category Test
- * @package  Nextpack\Nextpack\Tests
+ * @package  Omarayman\Dictionary\Tests
  * @author   Mahmoud Zalt <mahmoud@zalt.me>
  */
 class SampleTest extends TestCase
