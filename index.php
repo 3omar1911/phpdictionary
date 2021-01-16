@@ -3,6 +3,12 @@
 require('./vendor/autoload.php');
 
 use Omarayman\Dictionary\Config;
+use Omarayman\Dictionary\Dictionary;
 
-$conf = new Config();
-dd($conf->get('greeting'));
+dd( Dictionary::fetch("good")->nouns() );
+
+function dd($value)
+{
+    var_dump($value);
+    die;
+}

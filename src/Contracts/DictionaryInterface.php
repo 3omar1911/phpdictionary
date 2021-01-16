@@ -14,31 +14,28 @@ interface DictionaryInterface
      * 
      * @param string $text
      * @param string $languageIsoCode
+     * @return DictionaryInterface
      */
     public function build(string $text, string $languageIsoCode = 'en'): DictionaryInterface;
 
     /**
-     * Reset the object to its original state
-     */
-    public function reset(): DictionaryInterface;
-    /**
-     * get the nount from the api response if exists
+     * get the nouns from the api response if exists
      * 
-     * @return string|null
+     * @return array
      */
-    public function noun();
+    public function nouns(): array;
 
     /**
-     * get the verb from the api response if exists
+     * get the verbs from the api response if exists
      * 
-     * @return string|null
+     * @return array
      */
-    public function verb();
+    public function verbs(): array;
 
     /**
-     * get the adjective from the api response if exists
+     * get the adjectives from the api response if exists
      * 
-     * @return string|null
+     * @return array
      */
-    public function adjective();
+    public function adjectives(): array;
 }

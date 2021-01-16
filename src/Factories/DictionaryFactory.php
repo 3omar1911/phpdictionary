@@ -2,6 +2,7 @@
 
 namespace Omarayman\Dictionary\Factories;
 
+use Omarayman\Dictionary\Contracts\DictionaryInterface;
 use Omarayman\Dictionary\Contracts\FactoriesInterface;
 use Omarayman\Dictionary\Exceptions\UnknownDictionaryProviderException;
 
@@ -14,7 +15,7 @@ class DictionaryFactory implements FactoriesInterface
         $this->provider = $provider;
     }
 
-    public function generateInstance(): object
+    public function generateInstance(): DictionaryInterface
     {
         $class = "\\Omarayman\\Dictionary\\Dictionaries\\" . ucfirst($this->provider);
 
