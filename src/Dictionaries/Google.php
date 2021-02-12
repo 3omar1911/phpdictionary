@@ -39,7 +39,7 @@ class Google implements DictionaryInterface
         $this->meanings = [];
         foreach($apiResponse as $obj) {
             foreach($obj->meanings as $meaning) {
-                $this->meanings = array_merge($this->meanings, $meaning);
+                array_push($this->meanings, $meaning);
             }
         }
     }
@@ -55,6 +55,7 @@ class Google implements DictionaryInterface
             'transitive verb' => &$this->verbs,
             'adjective' => &$this->adjectives,
         ];
+        
         foreach($this->meanings as $meaning) {
             if(! isset($map[$meaning->partOfSpeech])) {
                 continue;
