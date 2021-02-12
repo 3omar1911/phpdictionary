@@ -4,7 +4,7 @@ require('./vendor/autoload.php');
 
 use Omarayman\Dictionary\Dictionary;
 
-print_r( Dictionary::fetch("good")->verbs() );
+print_r( Dictionary::fetch("coding")->adjectives() );
 die;
 function dd($value)
 {
