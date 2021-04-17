@@ -4,6 +4,7 @@ namespace Omarayman\Dictionary\Dictionaries;
 
 use Exception;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
 use Omarayman\Dictionary\Contracts\DictionaryInterface;
 
 class Google implements DictionaryInterface
@@ -26,12 +27,16 @@ class Google implements DictionaryInterface
 
     public function build(string $text, string $languageIsoCode = 'en'): DictionaryInterface
     {
-        $client = new Client();
-        $response = $client->request('get', "https://api.dictionaryapi.dev/api/v2/entries/$languageIsoCode/$text");
-        $apiResponse = json_decode($response->getBody()->getContents());
-        $this->mergeMeanings($apiResponse);
-        $this->mapMeanings();
-        return $this;
+        try {
+            $client = new Client();
+            $response = $client->request('get', "https://api.dictionaryapi.dev/api/v2/entries/$languageIsoCode/$text");
+            $apiResponse = json_decode($response->getBody()->getContents());
+            $this->mergeMeanings($apiResponse);
+            $this->mapMeanings();
+            return $this;
+        } catch(ClientException $e) {
+            return $this;
+        }
     }
 
     private function mergeMeanings($apiResponse)
